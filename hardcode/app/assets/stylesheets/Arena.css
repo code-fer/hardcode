@@ -1,0 +1,202 @@
+/* General reset for margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Top Coders Section */
+.top_coders {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0px 80px; /* Espaciado mayor entre contenedores */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fireAnimation 3s infinite alternate;
+    background: linear-gradient(45deg, rgba(255, 85, 85, 0.8), rgba(255, 255, 0, 0.8), rgba(237, 27, 27, 0.8));
+    background-size: 400% 400%;
+    overflow: hidden;
+    margin-bottom: 50px; /* Aumentar espacio inferior */
+    border: 4px solid transparent; /* Marco transparente para aplicar el brillo */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Agregar brillo alrededor del contenedor */
+}
+
+/* Animate the fire background */
+@keyframes fireAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.top_coders h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Animate the list of top coders */
+.top_coders ul {
+    list-style: none;
+    padding: 30px;
+}
+
+.top_coders li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    opacity: 0;
+    animation: slideIn 1s forwards;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.top_coders li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.top_coders li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.top_coders li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.top_coders li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Retos recomendados Section */
+.retos_recomendados {
+    display: flex;
+    justify-content: center; /* Centra el contenedor principal */
+    align-items: center;
+    padding: 40px 0px;
+    margin: 0px ; /* Espaciado mayor entre contenedores */
+    border-radius: 10px;
+
+    animation: retosAnimation 1.5s ease-out;
+    text-align: center;
+    flex: 1; /* Asegura que ocupe más espacio */
+    overflow: hidden; /* Para mantener los bordes suaves */
+}
+
+
+.lista_retos_recomendados {
+    background: rgba(255, 255, 255, 0.57); /* Fondo de la lista con un toque de transparencia */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(17, 243, 217, 0.8);
+    animation: fadeIn 2s ease-out;
+    width: 100%;
+    max-width: 600px; /* Limitar el ancho para mayor control */
+}
+
+/* Title for Retos */
+.retos_recomendados h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #03bbb0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra en el texto */
+    animation: fadeIn 2s ease-out;
+}
+
+/* Style for the list of retos */
+.retos_recomendados ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.retos_recomendados li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s ease-in-out;
+}
+
+.retos_recomendados li:hover {
+    transform: scale(1.05);
+    color: #ffdf00;
+    background-color: rgba(255, 85, 85, 0.1); /* Fondo dinámico al pasar el ratón */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-in animation for list items */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for Retos section */
+@keyframes retosAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Flexbox container for layout */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Separación entre los dos contenedores */
+    height: 100vh; /* Asegura que ocupen toda la altura de la pantalla */
+    flex-direction: column; /* Apilamos los contenedores en pantallas pequeñas */
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top_coders, .retos_recomendados {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .top_coders h2, .retos_recomendados h2 {
+        font-size: 1.5rem;
+    }
+
+    .top_coders li, .retos_recomendados li {
+        font-size: 1rem;
+    }
+
+    /* Ajustamos el contenedor para que se apilen en pantallas pequeñas */
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

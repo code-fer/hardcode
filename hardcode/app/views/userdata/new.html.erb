@@ -1,0 +1,44 @@
+<h1>Rellena tus datos de usuario</h1>
+
+<%= form_with(model: @user_data, local: true) do |f| %>
+  <% if @user_data.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_data.errors.count, "error") %> prohibió guardar los datos:</h2>
+      <ul>
+        <% @user_data.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_usuario %>
+    <%= f.text_field :nombre_usuario %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nombre_apellidos, "Nombre y Apellidos" %>
+    <%= f.text_field :nombre_apellidos %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ntelefono, "Número de Teléfono" %>
+    <%= f.text_field :ntelefono %>
+
+  <div class="field">
+    <%= f.label :rrss_1, "Linkedin" %>
+    <%= f.text_field :rrss_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rrss_2, "Github" %>
+    <%= f.text_field :rrss_2 %>
+  </div>
+
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Guardar Datos" %>
+  </div>
+<% end %>

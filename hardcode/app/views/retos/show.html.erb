@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= @reto.nombre %></title>
+  <%= stylesheet_link_tag 'home', media: 'all' %>
+  <%= stylesheet_link_tag 'retostyle', media: 'all' %>  <!-- Cargamos solo el CSS para esta vista -->
+
+  <!-- Incluir el menú de cabecera -->
+  <%= render 'shared/header' %>
+</head>
+
+<body>
+<div id="reto-page">
+  <div class="datos_container">
+    <h1><%= @reto.nombre %></h1>
+    <h2><%= @reto.empresa %></h2>
+    <p><%= @reto.descripcion %></p>
+  </div>
+
+  <% if Solucion.find_by(user_id: current_user.id, reto_id: @reto.id).nil? %>
+    <div class="anyadir-container">
+      <%= link_to 'Añadir solución', new_for_reto_path(id: @reto.id), class: 'btn-add-solution' %>
+    </div>
+  <% else %>
+    <div class="vote_info">
+      <% if Voto.exists?(votado_por_user_id: current_user.id, reto_id: @reto.id) %>
+        <div class="voto dado">Ya has votado una solución.</div>
+      <% else %>
+        <div class="voto dado">¡Aún tienes un voto disponible!</div>
+      <% end %>
+    </div>
+
+    <div class="soluciones_list">
+      <% @soluciones.each do |solucion| %>
+        <div class="solucion-card">
+          <div class="solucion-header">
+            <%= link_to "- #{solucion.user.email} #{solucion.created_at.strftime("%d/%m/%Y")}", solucion_reto_path(solucion_id: solucion.id, reto_id: @reto.id), class: 'solucion-title' %>
+            <div class="punct_div">
+
+              <%= solucion.puntuacion %> puntos
+            </div>
+
+          </div>
+          <div class="solucion-description">
+            <%= solucion.descripcion %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  <% end %>
+</div>
+</body>
+</html>

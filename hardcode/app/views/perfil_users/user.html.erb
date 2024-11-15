@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <%= stylesheet_link_tag "perfil_user"%>
+</head>
+<body>
+<!-- Incluir el menú de cabecera -->
+<%= render 'shared/header' %>
+<div class="main-container">
+
+<div class = "datos_basicos" >
+  <div class="username">
+    <strong>Nombre: </strong>
+    <p><%= @userdat.nombre_apellidos %></p>
+  </div>
+
+  <div class="username-handle">
+    <strong>Handle: </strong>
+    <p>@<%= @userdat.nombre_usuario %></p>
+  </div>
+
+  <div class="profile-details">
+    <strong>Email: </strong>
+    <p><%= @user.email %></p>
+  </div>
+
+  <div class="edit-profile">
+    <div class="edit-bg"></div>
+    <div class="edit-text">EDITAR</div>
+  </div>
+</div>
+
+ <div class="my-challenges"><strong>Tus Solucciones</strong>
+    <% if @solucionsUsuario%>
+    <% @solucionsUsuario.each do |sol| %>
+      <%= link_to reto_show_path(id: sol.id) do %>
+        <li>  <%= Reto.find(sol.reto_id).nombre %> </li>
+      <% end %>
+    <% end %>
+    <%else%>
+      <p>¡Aún no has subido ninguna soluccion!...</p>
+      <% link_to "Atrevete y compite ahora!", arena_path, class: arena_path %>
+    <%end%>
+ </div>
+
+  <div class = "my-retos">
+    
+  </div>
+
+</div>
+</body>
+</html>

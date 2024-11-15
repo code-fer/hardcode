@@ -1,0 +1,48 @@
+/* Background color for active link */
+.active {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente blanco */
+    border-radius: 5px;
+    padding: 15px; /* Ajusta este padding según tu preferencia */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header background */
+.header-bg {
+    width: 100%;
+    height: 136px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    z-index: 1000; /* Asegura que la barra esté por encima del contenido de la página */
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Enlace de navegación */
+.arena, .aprende, .miPerfil, .reto ,.delete{
+    color: white;
+    font-size: 32px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px; /* Ajusta este padding según tu diseño */
+    text-decoration: none;
+}
+
+.arena-container, .aprende-container, .perfil-container, .crear-container, .delete-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Asegura que ocupen la altura completa de la cabecera */
+}

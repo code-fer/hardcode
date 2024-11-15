@@ -1,0 +1,266 @@
+.container {
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    background: white;
+}
+
+.blur-box {
+    width: 539px;
+    height: 507px;
+    position: absolute;
+    left: 810px;
+    top: 475px;
+    background: #F0F0F0;
+    box-shadow: 4px 4px 4px;
+    filter: blur(4px);
+}
+
+.input-box {
+    width: 494px;
+    height: 85px;
+    background: #D9D9D9;
+    position: absolute;
+}
+
+.input-name {
+    left: 149px;
+    top: 206px;
+}
+
+.input-username {
+    left: 149px;
+    top: 325px;
+}
+
+.input-email {
+    left: 149px;
+    top: 444px;
+}
+
+.input-twitch {
+    left: 835px;
+    top: 601px;
+}
+
+.input-youtube {
+    left: 835px;
+    top: 738px;
+}
+
+.input-other {
+    left: 835px;
+    top: 857px;
+}
+
+.input-border {
+    width: 432.5px;
+    height: 0px;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.input-name-border {
+    left: 182.5px;
+    top: 258.5px;
+}
+
+.input-username-border {
+    left: 182.5px;
+    top: 377.5px;
+}
+
+.input-email-border {
+    left: 182.5px;
+    top: 496.5px;
+}
+
+.input-twitch-border {
+    left: 868.5px;
+    top: 653.5px;
+}
+
+.input-youtube-border {
+    left: 868.5px;
+    top: 790.5px;
+}
+
+.input-other-border {
+    left: 868.5px;
+    top: 909.5px;
+}
+
+.input-title {
+    width: 645px;
+    height: 45px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.input-title.name-title {
+    left: 182px;
+    top: 236px;
+}
+
+.input-title.username-title {
+    left: 182px;
+    top: 357px;
+}
+
+.input-title.email-title {
+    left: 182px;
+    top: 476px;
+}
+
+.input-title.twitch-title {
+    left: 868px;
+    top: 633px;
+}
+
+.input-title.youtube-title {
+    left: 868px;
+    top: 770px;
+}
+
+.input-title.other-title {
+    left: 868px;
+    top: 889px;
+}
+
+.circle-box {
+    width: 258px;
+    height: 258px;
+    padding: 64.5px 38.1px 28.17px;
+    left: 956px;
+    top: 118px;
+    position: absolute;
+    background: #EADDFF;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-content {
+    width: 258px;
+    height: 258px;
+}
+
+.social-media-message {
+    width: 482px;
+    height: 69px;
+    position: absolute;
+    left: 844px;
+    top: 511px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.welcome-message {
+    width: 613px;
+    height: 61px;
+    position: absolute;
+    left: 149px;
+    top: 560px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.small-circle {
+    width: 98px;
+    height: 98px;
+    padding: 8px;
+    left: 1154px;
+    top: 224px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-circle-border {
+    width: 98px;
+    height: 98px;
+}
+
+.header {
+    width: 350px;
+    height: 23px;
+    position: absolute;
+    left: 149px;
+    top: 30px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.title {
+    width: 582px;
+    height: 80px;
+    position: absolute;
+    left: 149px;
+    top: 78px;
+    color: black;
+    font-size: 64px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.continue-box {
+    width: 373px;
+    height: 97px;
+    padding: 12px;
+    left: 149px;
+    top: 885px;
+    position: absolute;
+    background: #7D7D7D;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue-text {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    line-height: 16px;
+    word-wrap: break-word;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.continue-text {
+    text-align: center;
+    color: white;
+    background-color: #7D7D7D;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+}

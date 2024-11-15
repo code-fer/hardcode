@@ -1,0 +1,30 @@
+
+<%= stylesheet_link_tag "barranavegacion" %>
+<div class="header-bg">
+    <div class="logo-container">
+      <%= image_tag "logo2.png", class: "site-logo", alt: "Logo HardCode" %>
+    </div>
+    <div class="arena-container">
+      <%= link_to 'ARENA', arena_path, class: "arena #{'active' if current_page?(arena_path)}" %>
+    </div>
+
+  <div class="aprende-container">
+    <%= link_to 'APRENDE', arena_path, class: "aprende " %>
+  </div>
+
+  <div class="perfil-container">
+    <%= link_to 'Mi Perfil', perfil_user_path, class: "miPerfil #{'active' if current_page?(perfil_user_path)}" %>
+  </div>
+
+  <%if Userdatum.find_by(user_id: current_user.id).tipo != "competidor" %>
+    <div class="crear-container">
+      <%= link_to 'Crear reto', new_reto_path, class: "reto #{'active' if current_page?(new_reto_path)}" %>
+    </div>
+  <% end %>
+
+
+  <div class="delete-container">
+    <%= link_to "Cerrar sesión", logout_path, method: :delete  ,class: "delete"%>
+  </div>
+
+  </div>

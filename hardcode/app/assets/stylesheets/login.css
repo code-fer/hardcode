@@ -1,0 +1,136 @@
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background-color: transparent;
+}
+
+.box.companies {
+    position: absolute;
+    width: 1440px;
+    height: 181px;
+    top: 750px;
+    background-color: #E2F8F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+
+.logo_container {
+    width: 170px;
+    height: 152px;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-logo {
+    width: 170px;
+    height: 152px;
+}
+
+.trusted-text {
+    position: absolute;
+    width: 536px;
+    height: 44px;
+    left: 105px;
+    top: 780px;
+    color: black;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.company-logo {
+    position: absolute;
+}
+
+.logo-1 {
+    width: 71px;
+    height: 71px;
+    left: 193px;
+    top: 836px;
+}
+
+.logo-2 {
+    width: 80px;
+    height: 61px;
+    left: 348px;
+    top: 840px;
+}
+
+.logo-3 {
+    width: 239px;
+    height: 85px;
+    left: 512px;
+    top: 828px;
+}
+
+.logo-4 {
+    width: 188px;
+    height: 51px;
+    left: 835px;
+    top: 836px;
+}
+
+.logo-5 {
+    width: 140px;
+    height: 78px;
+    left: 1107px;
+    top: 823px;
+}
+
+.login-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 1000px;
+    height: 262px;
+    left: 220px;
+    top: 300px;
+    font-family: 'Lexend', sans-serif;
+    background-color: #E2F8F0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.field-label {
+    background: transparent;
+}
+
+.btn-login {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    top: 600px;
+    right: 220px;
+    background-color: #50DEBC;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #028585;
+}
+
+.btn-login:focus {
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    background-color: #f8d7da;
+    padding: 10px;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena</title>
+  <%= stylesheet_link_tag 'Arena', media: 'all' %>
+</head>
+
+<body>
+<!-- Incluir el menú de cabecera -->
+<%= render 'shared/header' %>
+
+<div class="retos_recomendados">
+  <div class="lista_retos_recomendados">
+  <h2>Retos para tí</h2>
+  <ul>
+    <% @retos_recomendados.each do |reto| %>
+      <li> <%= link_to reto.nombre, reto_show_path(id: reto.id)%> </li>
+    <% end %>
+
+  </ul>
+  </div>
+</div>
+
+<div class="top_coders">
+  <h2>Top Coders of all time</h2>
+  <ul>
+    <% @usuarios_top.each_with_index do |user, index| %>
+      <li> <%= index + 1 %>: <%= user.nombre_usuario %> - (<%= user.puntuacion.presence || 0 %>)</li>
+    <% end %>
+  </ul>
+</div>
+<% flash.each do |key, message| %>
+  <div class="flash-message <%= key %>">
+    <%= message %>
+  </div>
+<% end %>
+
+
+</body>
+</html>

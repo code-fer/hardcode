@@ -1,0 +1,77 @@
+.container {
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    background: transparent;
+}
+
+.main-title {
+    width: 1067px;
+    height: 83px;
+    position: absolute;
+    left: 187px;
+    top: 72px;
+    color: white;
+    font-size: 64px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.instructions {
+    width: 1120px;
+    height: 191px;
+    position: absolute;
+    left: 187px;
+    top: 299px;
+}
+
+.how-to-start {
+    color: white;
+    font-size: 32px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.instructions-text {
+    color: white;
+    font-size: 32px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.steps {
+    width: 1067px;
+    height: 201px;
+    position: absolute;
+    left: 187px;
+    top: 490px;
+}
+
+.step-title {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    line-height: 28.8px;
+    word-wrap: break-word;
+}
+
+.step-description {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    line-height: 28.8px;
+    word-wrap: break-word;
+}
+
+.placeholder-image {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 630px;
+    top: 800px;
+}

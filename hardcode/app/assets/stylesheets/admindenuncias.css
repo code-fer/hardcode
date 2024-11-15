@@ -1,0 +1,153 @@
+.container {
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    background: white;
+}
+
+/* Tabs de navegación */
+.tabs {
+    width: 1336px;
+    height: 88px;
+    position: absolute;
+    top: 158px;
+    left: 52px;
+    display: inline-flex;
+}
+
+.tab {
+    flex: 1 1 0;
+    height: 75px;
+    padding: 4px 12px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-decoration: underline;
+}
+
+.active {
+    color: #303030;
+    border-bottom: 3px solid #303030;
+}
+
+.tab:not(.active) {
+    color: #767676;
+    border-bottom: 3px solid #b2b2b2;
+}
+
+/* Perfil de usuario y cierre de sesión */
+.user-profile {
+    width: 73px;
+    height: 78px;
+    position: absolute;
+    left: 1003px;
+    top: 30px;
+}
+
+.avatar {
+    width: 73px;
+    height: 66.49px;
+    position: absolute;
+    background: #575151;
+    border-radius: 50%;
+    top: 6.39px;
+}
+
+.avatar-img {
+    width: 70.25px;
+    height: 78px;
+    position: absolute;
+    left: 1.38px;
+    top: 0;
+}
+
+.logout-button {
+    width: 261px;
+    height: 63px;
+    position: absolute;
+    left: 1127px;
+    top: 40px;
+    background: #929292;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 32px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+}
+
+/* Sección principal */
+.content-section {
+    width: 1184px;
+    height: 612px;
+    position: absolute;
+    background: #D9D9D9;
+    left: 128px;
+    top: 304px;
+}
+
+/* Listado de cuentas */
+.denuncias-card {
+    width: 1070px;
+    height: 134px;
+    margin: 30px auto 0;
+    background: #91919180;
+    position: relative; /* Cambia a relative para que los hijos absolutos se posicionen respecto a este */
+}
+
+.denuncias-overlay {
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    height: 100%; /* Ocupar todo el alto del contenedor */
+    background: #91919180;
+    position: absolute;
+    top: 0; /* Asegúrate de que cubra todo */
+    left: 0; /* Asegúrate de que cubra todo */
+}
+
+.denuncias-name {
+
+    position: absolute; /* Mantén esto si necesitas que esté en una posición específica */
+    left: 40px; /* Mantén la posición específica */
+    top: 44px;
+
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+}
+
+.separador {
+    width: 2px; /* Grosor de la línea */
+    height: 100%; /* Altura completa del contenedor */
+    background-color: #929292; /* Color gris más oscuro */
+    position: absolute; /* Para posicionarla dentro de reto-card */
+    left: 30%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar el centrado */
+}
+
+.denuncias-description {
+    position: absolute; /* Mantén esto si necesitas que esté en una posición específica */
+    left: 360px; /* Mantén la posición específica */
+    top: 58px; /* Mantén la posición específica */
+    color: black;
+    font-size: 24px;
+    font-family: 'Lexend', sans-serif;
+}
+
+
+.second {
+    top: 214px;
+}
+
+.third {
+    top: 376px;
+}

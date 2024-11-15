@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <%= stylesheet_link_tag "registeruser.css", media: "all" %>
+</head>
+<body>
+<div class="container">
+  <div class="blur-box"></div>
+
+  <%= form_with model: @user, url: register_user_path, method: "post", local: true do |f| %>
+    <div class="input-title">Nombre y Apellidos</div>
+    <%= f.text_field :nombre_apellidos, placeholder: "Introduce tu nombre y apellidos", class: "form-input" %>
+
+    <div class="input-title">Nombre de Usuario</div>
+    <%= f.text_field :nombre_usuario, placeholder: "Introduce tu nombre de usuario", class: "form-input" %>
+
+    <div class="input-title">Número de teléfono</div>
+    <%= f.number_field :ntelefono, placeholder: "Introduce tu número de teléfono", class: "form-input" %>
+
+    <div class="input-title">Linkedin</div>
+    <%= f.text_field :rrss_1, placeholder: "Linkedin", class: "form-input" %>
+
+    <div class="input-title">GitHub</div>
+    <%= f.text_field :rrss_2, placeholder: "GitHub", class: "form-input" %>
+
+    <%= f.submit "Registrar", class: "form-submit" %>
+  <% end %>
+
+  <div class="circle-box">
+    <%= image_tag "purplelogo.png", class: "circle-content", alt: "Logo" %>
+  </div>
+
+  <div class="social-media-message">¡Incluye tus redes sociales y canales de comunicación para darte a conocer!</div>
+
+  <div class="welcome-message">
+    En hardcode, te ofrecemos una plataforma para que crees y publiques retos que fomenten el engagement y la colaboración en tu audiencia. ¡Diseñar desafíos únicos no solo te permite compartir tu conocimiento, sino que también te ayuda a construir una comunidad de desarrolladores apasionados!
+  </div>
+
+  <div class="small-circle">
+    <%= image_tag "editlogo.png", class: "small-circle-border", alt: "Logo" %>
+  </div>
+
+  <div class="header">Registro</div>
+  <div class="title">¡Bienvenido!</div>
+
+  <div class="continue-box">
+    <div class="continue-text">CONTINUAR</div>
+  </div>
+</div>
+</body>
+</html>

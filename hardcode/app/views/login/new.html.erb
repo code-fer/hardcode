@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - HardCode</title>
+  <%= stylesheet_link_tag "login", media: "all" %>
+  <%= stylesheet_link_tag "global_fondo", media: 'all' %>
+</head>
+<body>
+<div class="container">
+  <div class="logo-container">
+    <%= image_tag "logo2.png", class: "site-logo", alt: "Logo HardCode" %>
+  </div>
+
+  <% if flash[:alert] %>
+    <div class="error-message">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
+  <%= form_with url: login_path, method: :post, local: true do |f| %>
+    <div class="login-container">
+      <div class="username-field">
+        <div class="field-label">Nombre de usuario</div>
+        <div class="field-input">
+          <%= f.text_field :nombre_usuario, placeholder: "Nombre de usuario", class: "input" %>
+        </div>
+      </div>
+
+      <div class="password-field">
+        <div class="field-label">Contraseña</div>
+        <div class="field-input">
+          <%= f.password_field :password, placeholder: "Contraseña", class: "input" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-button">
+      <%= f.submit "Inicia Sesión", class: "btn-login"%>
+    </div>
+  <% end %>
+
+  <div class="box companies"></div>
+  <div class="trusted-text">Estas empresas confían en nosotros</div>
+
+  <%= image_tag "company_logo1.png", class: "company-logo logo-1", alt: "Logo 1" %>
+  <%= image_tag "company_logo2.png", class: "company-logo logo-2", alt: "Logo 2" %>
+  <%= image_tag "company_logo3.png", class: "company-logo logo-3", alt: "Logo 3" %>
+  <%= image_tag "company_logo4.png", class: "company-logo logo-4", alt: "Logo 4" %>
+  <%= image_tag "company_logo5.png", class: "company-logo logo-5", alt: "Logo 5" %>
+</div>
+</body>
+</html>

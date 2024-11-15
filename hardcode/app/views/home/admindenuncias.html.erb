@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Cuentas</title>
+  <%= stylesheet_link_tag "adminaccounts", media: "all" %>
+</head>
+<body>
+<div class="container">
+  <!-- Tabs de navegación -->
+  <div class="tabs">
+    <%= link_to 'Cuentas', adminaccounts_path, class: 'tab' %>
+    <%= link_to 'Retos', adminretos_path, class: 'tab' %>
+    <div class="tab active">Denuncias</div>
+  </div>
+
+  <!-- Perfil del usuario y botón de cierre de sesión -->
+  <div class="user-profile">
+    <div class="avatar"></div>
+    <%= image_tag "profilepic.png", class: "avatar-img", alt: "avatar" %>
+  </div>
+  <div class="logout-button">
+    <div>Cerrar Sesión</div>
+  </div>
+
+  <!-- Sección principal de contenido -->
+  <div class="content-section">
+
+  <!-- Listado de cuentas -->
+    <div class="denuncias-card">
+      <div class="denuncias-overlay"></div>
+      <div class="denuncias-name">"Binary Beast"</div>
+      <div class="separador"></div>
+      <div class="denuncias-description">Descripción denuncia</div>
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suscripción Mensual</title>
+  <%= stylesheet_link_tag "registercreator.css", media: "all" %>
+</head>
+<body>
+<div class="container">
+  <div class="blur-box"></div>
+  <div class="main-title">Estás a un paso de conectar con tu audiencia...</div>
+  <div class="intro-text">
+    En hardcode trabajamos con un sistema de suscripción mensual para creadores de contenido con el que tendrás acceso a:
+  </div>
+  <div class="benefits">
+    * Publicación ilimitada de retos.<br />
+    > Oportunidades de colaboración con empresas para crear contenido especializado.<br />
+    · Soporte prioritario por parte de nuestro equipo.
+  </div>
+
+  <!-- Formulario de pago -->
+  <div class="input-box card-number"></div>
+  <div class="card-number-label">NÚMERO DE TARJETA</div>
+  <div class="input-box cvc"></div>
+  <div class="cvc-label">CVC</div>
+  <div class="input-box expiry"></div>
+  <div class="expiry-label">CADUCIDAD</div>
+
+  <!-- Precio mensual -->
+  <div class="price">[CANTIDAD]€/MES</div>
+
+  <!-- Botón de continuar -->
+  <div class="continue-button">
+    <div>CONTINUAR</div>
+  </div>
+</div>
+</body>
+</html>

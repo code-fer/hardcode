@@ -1,0 +1,113 @@
+/* Estilos generales específicos para #reto-page */
+#reto-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(51, 51, 51, 0);
+}
+
+#reto-page .datos_container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#reto-page .datos_container h1 {
+    font-size: 2rem;
+    color: rgba(17, 243, 217, 0.8);
+}
+
+#reto-page .datos_container h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+#reto-page .datos_container p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Botón para añadir solución */
+#reto-page .anyadir-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#reto-page .anyadir-container .btn-add-solution {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#reto-page .anyadir-container .btn-add-solution:hover {
+    background-color: #218838;
+}
+
+/* Información de voto */
+#reto-page .vote_info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#reto-page .vote_info .voto.dado {
+    background-color: #ffc107;
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#reto-page .soluciones_list {
+    margin-top: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reto-page .solucion-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#reto-page .solucion-card:hover {
+    transform: translateY(-4px);
+}
+
+#reto-page .solucion-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(9, 154, 137, 0.8);
+    margin-bottom: 10px;
+}
+
+#reto-page .solucion-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#reto-page .punct_div {
+    text-decoration: #ffdf00;
+
+    color:#ffdf00 ;
+}
+
+#reto-page .solucion-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}

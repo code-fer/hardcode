@@ -1,0 +1,143 @@
+.container {
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    background: white;
+}
+
+.blur-box {
+    width: 1108px;
+    height: 449px;
+    position: absolute;
+    left: 186px;
+    top: 287px;
+    background: #d9d9d9;
+    box-shadow: 4px 4px 4px;
+    filter: blur(4px);
+}
+
+.main-title {
+    width: 1067px;
+    height: 83px;
+    position: absolute;
+    left: 186px;
+    top: 78px;
+    color: black;
+    font-size: 64px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+
+.intro-text {
+    width: 1011px;
+    height: 172px;
+    position: absolute;
+    left: 254px;
+    top: 342px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+
+.benefits {
+    width: 1067px;
+    height: 201px;
+    position: absolute;
+    left: 238px;
+    top: 428px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    line-height: 28.8px;
+}
+
+/* Estilos de las cajas de entrada de tarjeta */
+.input-box {
+    height: 85px;
+    background: #d9d9d9;
+    position: absolute;
+}
+
+.card-number {
+    width: 494px;
+    left: 275px;
+    top: 754px;
+}
+
+.cvc {
+    width: 193px;
+    left: 793px;
+    top: 754px;
+}
+
+.expiry {
+    width: 193px;
+    left: 1013px;
+    top: 754px;
+}
+
+/* Etiquetas de las cajas de entrada */
+.card-number-label, .cvc-label, .expiry-label {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+    color: black;
+}
+
+.card-number-label {
+    width: 645px;
+    height: 45px;
+    left: 308px;
+    top: 776px;
+}
+
+.cvc-label {
+    width: 406px;
+    height: 45px;
+    left: 814px;
+    top: 776px;
+}
+
+.expiry-label {
+    width: 406px;
+    height: 45px;
+    left: 1034px;
+    top: 776px;
+}
+
+/* Precio mensual */
+.price {
+    width: 401px;
+    height: 51px;
+    position: absolute;
+    left: 621px;
+    top: 616px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Botón continuar */
+.continue-button {
+    width: 133px;
+    height: 85px;
+    padding: 12px;
+    position: absolute;
+    left: 653px;
+    top: 879px;
+    background: #7d7d7d;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue-button div {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+}

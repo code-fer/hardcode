@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ini HardCode</title>
+  <%= stylesheet_link_tag "home", media: 'all' %>
+  <%= stylesheet_link_tag "global_fondo", media: 'all' %>
+</head>
+<body>
+<div class="container">
+  <div class="logo-container">
+    <%= image_tag "logo2.png", class: "site-logo", alt: "Logo HardCode" %>
+  </div>
+
+  <div class="text-content">
+    <p>Bienvenidos a HardCode, la plataforma donde el código se convierte en oportunidad.</p>
+    <p><strong>Regístrate:</strong> Crea tu perfil en segundos.</p>
+    <p><strong>Resuelve Desafíos:</strong> Participa en retos diseñados por expertos o empresas.</p>
+    <p><strong>Destaca:</strong> Aparece en rankings, compite y obtén visibilidad ante empresas.</p>
+    <p><strong>Conecta:</strong> Contacta con empleadores interesados o sigue tu progreso.</p>
+  </div>
+
+  <div class="box-buttons"></div>
+  <div class="buttons-container">
+    <%= link_to 'INICIAR SESIÓN', new_user_session_path, class: 'button' %>
+    <%= link_to 'CREAR CUENTA', register_path, class: 'button' %>
+  </div>
+
+  <div class="box-companies"></div>
+  <div class="trusted-text">Estas empresas confían en nosotros</div>
+
+  <%= image_tag "company_logo1.png", class: "company-logo logo-1", alt: "Logo 1" %>
+  <%= image_tag "company_logo2.png", class: "company-logo logo-2", alt: "Logo 2" %>
+  <%= image_tag "company_logo3.png", class: "company-logo logo-3", alt: "Logo 3" %>
+  <%= image_tag "company_logo4.png", class: "company-logo logo-4", alt: "Logo 4" %>
+  <%= image_tag "company_logo5.png", class: "company-logo logo-5", alt: "Logo 5" %>
+
+</div>
+</body>
+</html>

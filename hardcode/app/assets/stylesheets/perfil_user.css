@@ -1,0 +1,93 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main container for both sections (user data and challenges) */
+.main-container {
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+    gap: 20px; /* Añade espacio entre las dos columnas */
+}
+
+/* User data section on the right */
+.datos_basicos {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necesario para colocar el botón debajo */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+}
+
+/* Challenges section on the left */
+.my-challenges {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    height: fit-content;
+}
+
+.my-challenges strong {
+    font-size: 22px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.my-challenges li {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.my-challenges li:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Edit button styles */
+.edit-profile {
+    margin-top: 20px; /* Espacio por encima del botón */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Ancho adecuado */
+    align-self: flex-start; /* Alinea el botón a la izquierda */
+    display: inline-block; /* Se adapta al tamaño del contenido */
+    text-align: center;
+    border: none;
+}
+
+.edit-profile:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .datos_basicos,
+    .my-challenges {
+        margin: 10px 0;
+    }
+}

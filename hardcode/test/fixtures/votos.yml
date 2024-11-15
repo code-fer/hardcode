@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  solucion: one
+  reto: one
+
+two:
+  user: two
+  solucion: two
+  reto: two

@@ -1,0 +1,35 @@
+<!-- app/views/home/register_user.html.erb -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unete a nosotros</title>
+  <%= stylesheet_link_tag "register", media: "all" %>
+</head>
+<body>
+<div class="container">
+  <div class="title">¡Únete a nosotros!</div>
+
+  <div class="box box-competitor"></div>
+  <div class="box box-company"></div>
+  <div class="box box-creator"></div>
+
+  <div class="competitor-title">Competidor</div>
+  <div class="competitor-description">Programa, aprende y demuestra tus habilidades en competición</div>
+
+  <div class="company-description">Caza talentos para tu empresa, encuentra al número uno en tu tecnología. Hazte ver.</div>
+
+  <div class="creator-description">Impulsa tu carrera, date a conocer e interactúa con tu audiencia.</div>
+
+  <%= link_to "GRATIS", new_user_registration_path, class: "competitor-price" %>
+  <%= link_to "+ INFO", registerenterprise_path, class: "company-info" %>
+  <%= link_to "X/MES", new_user_registration_path, class: "creator-price" %>
+
+  <div class="creator-title">Creador de contenido</div>
+  <div class="company-title">Empresa</div>
+
+  <%= image_tag "logo2.png", class: "image-placeholder", alt: "Logo" %>
+</div>
+</body>
+</html>

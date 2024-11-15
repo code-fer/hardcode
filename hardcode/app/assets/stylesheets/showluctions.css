@@ -1,0 +1,124 @@
+/* Estilo específico para la vista de la solución */
+#solucion-page {
+    font-family: 'Courier New', Courier, monospace; /* Tipografía de código */
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Eliminamos el fondo blanco */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    box-sizing: border-box;
+    width: 100%; /* Para que el contenedor ocupe todo el ancho */
+    max-width: 1200px; /* Limita el ancho máximo para que el contenido no se expanda demasiado */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding-top: 200px; /* Espaciado en la parte superior */
+}
+
+/* Estilo del texto del archivo */
+#solucion-page pre {
+    font-size: 1.2rem;
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #2e2e2e; /* Fondo oscuro para el área de código */
+    color: #f8f9fa; /* Texto claro */
+    border-radius: 8px;
+    white-space: pre-wrap; /* Permite saltos de línea */
+    word-wrap: break-word;
+    max-width: 80%;
+    overflow-wrap: break-word;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para las votaciones */
+#solucion-page .votaciones {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo del botón de votar */
+#solucion-page .voto-section {
+    background-color: #07facc; /* Azul brillante */
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+/* Estilos de los botones */
+#solucion-page .votar-boton {
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#solucion-page .votar-boton:hover {
+    background-color: #03bbb0; /* Azul más oscuro al hacer hover */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Mensajes llamativos con mejor visibilidad */
+#solucion-page .voto-section div,
+#solucion-page .ti-mismo,
+#solucion-page .success-message {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 1.2rem; /* Aumentar el tamaño del texto */
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+/* Mensajes de error (rojo) */
+#solucion-page .voto-section div {
+    background-color: #ff4c4c; /* Rojo más brillante */
+    color: white; /* Asegura que el texto sea blanco y legible */
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+#solucion-page .voto-section div:hover {
+    background-color: #f44336; /* Rojo más oscuro al pasar el mouse */
+    transform: translateY(-4px); /* Efecto de elevación */
+}
+
+/* Mensajes de advertencia (naranja) */
+#solucion-page .ti-mismo {
+    background-color: #ff9800; /* Naranja para advertencia */
+    color: white; /* Asegura que el texto sea blanco */
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
+}
+
+#solucion-page .ti-mismo:hover {
+    background-color: #f57c00; /* Naranja más oscuro al pasar el mouse */
+    transform: translateY(-4px); /* Efecto de elevación */
+}
+
+/* Mensajes de éxito (verde) */
+#solucion-page .success-message {
+    background-color: #28a745; /* Verde para éxito */
+    color: white; /* Asegura que el texto sea blanco */
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+#solucion-page .success-message:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+    transform: translateY(-4px); /* Efecto de elevación */
+}

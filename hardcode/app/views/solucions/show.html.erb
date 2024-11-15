@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena</title>
+
+</head>
+
+<body>
+<!-- Incluir el menú de cabecera -->
+<%= render 'shared/header' %>
+<%= stylesheet_link_tag 'showluctions', media: 'all' %>  <!-- Cargamos solo el CSS para esta vista -->
+<!-- Contenido específico de la vista de solución -->
+<div id="solucion-page">
+  <pre><%= @file_content %></pre>
+
+  <div class="votaciones">
+    <% if @solucion.user_id != current_user.id %>
+      <% if !Voto.exists?(votado_por_user_id: current_user.id, reto_id: @reto.id) %>
+        <div class="voto-section_prev">
+          <!-- Muestra un botón para votar -->
+          <%= button_to 'Votar', votos_path(user_id: @solucion.user_id, solucion_id: @solucion.id), method: :post, class: 'votar-boton' %>
+        </div>
+      <% else %>
+        <div class="voto-section">
+          Ya has votado por otra solución
+        </div>
+      <% end %>
+    <% else %>
+      <div class="ti-mismo">
+        No te puedes votar a ti mismo
+      </div>
+    <% end %>
+  </div>
+</div>
+
+</body>
+</html>

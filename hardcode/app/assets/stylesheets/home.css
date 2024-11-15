@@ -1,0 +1,148 @@
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background-color: transparent;
+}
+
+/* Botones */
+.box-buttons {
+    position: absolute;
+    width: 455px;
+    height: 378px;
+    left: 897px;
+    top: 200px;
+    background-color: #E2F8F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    position: absolute;
+    width: 373px;
+    height: 254px;
+    left: 934px;
+    top: 277px;
+}
+
+.button {
+    width: 373px;
+    height: 97px;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #50DEBC;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #028585;
+}
+
+.button:focus {
+    outline: none;
+}
+
+/*logos companies*/
+.box-companies {
+    position: absolute;
+    width: 1440px;
+    height: 181px;
+    top: 750px;
+    background-color: #E2F8F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+
+.logo_container {
+    width: 170px;
+    height: 152px;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-logo {
+    width: 170px;
+    height: 152px;
+}
+
+.trusted-text {
+    position: absolute;
+    width: 536px;
+    height: 44px;
+    left: 105px;
+    top: 780px;
+    color: black;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.company-logo {
+    position: absolute;
+}
+
+.logo-1 {
+    width: 71px;
+    height: 71px;
+    left: 193px;
+    top: 836px;
+}
+
+.logo-2 {
+    width: 80px;
+    height: 61px;
+    left: 348px;
+    top: 840px;
+}
+
+.logo-3 {
+    width: 239px;
+    height: 85px;
+    left: 512px;
+    top: 828px;
+}
+
+.logo-4 {
+    width: 188px;
+    height: 51px;
+    left: 835px;
+    top: 836px;
+}
+
+.logo-5 {
+    width: 140px;
+    height: 78px;
+    left: 1107px;
+    top: 823px;
+}
+
+/* Contenido de texto */
+.text-content {
+    position: absolute;
+    width: 756px;
+    height: 44px;
+    left: 84px;
+    top: 200px;
+    color: white;
+    font-size: 30px;
+    line-height: 49px;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+}
+
+.text-content strong {
+    font-weight: 700;
+}
